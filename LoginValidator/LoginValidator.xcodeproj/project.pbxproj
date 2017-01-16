@@ -12,6 +12,8 @@
 		53200F2E1E2C11F40037254F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53200F2C1E2C11F40037254F /* Main.storyboard */; };
 		53200F301E2C11F40037254F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53200F2F1E2C11F40037254F /* Assets.xcassets */; };
 		53200F331E2C11F40037254F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53200F311E2C11F40037254F /* LaunchScreen.storyboard */; };
+		5385EFBD1E2C833E00A49E08 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385EFBC1E2C833D00A49E08 /* AlertController.swift */; };
+		5385EFBF1E2C868400A49E08 /* AlertController+Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5385EFBE1E2C868400A49E08 /* AlertController+Show.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		53200F3F1E2C11F50037254F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53200F481E2C11F50037254F /* LoginValidatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidatorUITests.swift; sourceTree = "<group>"; };
 		53200F4A1E2C11F50037254F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5385EFBC1E2C833D00A49E08 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		5385EFBE1E2C868400A49E08 /* AlertController+Show.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlertController+Show.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 		53200F271E2C11F40037254F /* LoginValidator */ = {
 			isa = PBXGroup;
 			children = (
-				53200F2A1E2C11F40037254F /* CreateAccountViewController.swift */,
 				53200F2C1E2C11F40037254F /* Main.storyboard */,
+				5385EFC31E2C870700A49E08 /* Controller */,
+				5385EFC21E2C870300A49E08 /* View */,
+				5385EFC01E2C86F600A49E08 /* Extensions */,
 				53200F561E2C123D0037254F /* Supporting Files */,
 			);
 			path = LoginValidator;
@@ -94,6 +100,30 @@
 				53200F341E2C11F40037254F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5385EFC01E2C86F600A49E08 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5385EFBE1E2C868400A49E08 /* AlertController+Show.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		5385EFC21E2C870300A49E08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5385EFBC1E2C833D00A49E08 /* AlertController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5385EFC31E2C870700A49E08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53200F2A1E2C11F40037254F /* CreateAccountViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				53200F2B1E2C11F40037254F /* CreateAccountViewController.swift in Sources */,
+				5385EFBF1E2C868400A49E08 /* AlertController+Show.swift in Sources */,
+				5385EFBD1E2C833E00A49E08 /* AlertController.swift in Sources */,
 				53200F291E2C11F40037254F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

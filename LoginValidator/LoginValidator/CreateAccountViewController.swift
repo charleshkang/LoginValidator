@@ -12,9 +12,11 @@ class CreateAccountViewController: UIViewController {
     
     //MARK: IBOutlets
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordVisibilityToggle: UIButton!
     
     //MARK: Properties
     var toggled = false
+    let alertController = AlertController()
     
     //MARK: Lifecycle Methods
     override func viewDidLoad() {
@@ -25,9 +27,11 @@ class CreateAccountViewController: UIViewController {
     @IBAction func togglePasswordVisibility(_ sender: Any) {
         if !toggled {
             passwordTextField.isSecureTextEntry = false
+            passwordVisibilityToggle.setTitle("👁", for: .normal)
             toggled = true
         } else {
             passwordTextField.isSecureTextEntry = true
+            passwordVisibilityToggle.setTitle("🙈", for: .normal)
             toggled = false
         }
     }
@@ -38,7 +42,7 @@ class CreateAccountViewController: UIViewController {
         let test = NSPredicate(format:"Self Matches %@", regex)
         return test.evaluate(with: input)
     }
-
+    
 }
 
 extension CreateAccountViewController: UITextFieldDelegate {
@@ -47,13 +51,9 @@ extension CreateAccountViewController: UITextFieldDelegate {
         passwordTextField.resignFirstResponder()
         if isValidInput(input: passwordTextField.text!) {
             // Create the account
-            let alert = UIAlertController(title: "Valid Password", message: "Account Created!", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            alertController.validAlert()
         } else {
-            let alert = UIAlertController(title: "Invalid Password", message: "Passwords must be between 6-10 characters and must include an uppercase character and number.", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            alertController.invalidAlert()
             return false
         }
         return true

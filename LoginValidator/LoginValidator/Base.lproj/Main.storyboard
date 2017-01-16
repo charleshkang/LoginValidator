@@ -74,6 +74,7 @@
                     </view>
                     <connections>
                         <outlet property="passwordTextField" destination="8zY-Wu-Yld" id="MrX-R4-Lxn"/>
+                        <outlet property="passwordVisibilityToggle" destination="axZ-5H-yUY" id="x8k-Od-GbJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
