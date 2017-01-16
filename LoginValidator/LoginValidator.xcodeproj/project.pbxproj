@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		515C4A0AC8FB3079B1F3A1EA /* Pods_LoginValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1464649AF41EC63D649E4A5 /* Pods_LoginValidator.framework */; };
 		53200F291E2C11F40037254F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53200F281E2C11F40037254F /* AppDelegate.swift */; };
 		53200F2B1E2C11F40037254F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53200F2A1E2C11F40037254F /* CreateAccountViewController.swift */; };
 		53200F2E1E2C11F40037254F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53200F2C1E2C11F40037254F /* Main.storyboard */; };
@@ -43,7 +42,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				515C4A0AC8FB3079B1F3A1EA /* Pods_LoginValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,7 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -368,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
