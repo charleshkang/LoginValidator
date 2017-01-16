@@ -27,11 +27,11 @@ class CreateAccountViewController: UIViewController {
     @IBAction func togglePasswordVisibility(_ sender: Any) {
         if !toggled {
             passwordTextField.isSecureTextEntry = false
-            passwordVisibilityToggle.setTitle("👁", for: .normal)
+            passwordVisibilityToggle.setTitle("🙈", for: .normal)
             toggled = true
         } else {
             passwordTextField.isSecureTextEntry = true
-            passwordVisibilityToggle.setTitle("🙈", for: .normal)
+            passwordVisibilityToggle.setTitle("👁", for: .normal)
             toggled = false
         }
     }
