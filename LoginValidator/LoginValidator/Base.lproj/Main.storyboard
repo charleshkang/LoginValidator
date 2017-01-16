@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CREATE ACCOUNT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idV-fL-7H3">
-                                <rect key="frame" x="121" y="28" width="134.5" height="18"/>
+                                <rect key="frame" x="120" y="28" width="135" height="18"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -56,13 +56,22 @@
                                     <action selector="togglePasswordVisibility:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uph-oN-Ena"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwords must be between 6-11 characters and must include at least 1 uppercase letter and number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueM-YH-VOG">
+                                <rect key="frame" x="26" y="384" width="323" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.14509803921568626" green="0.16862745098039217" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8zY-Wu-Yld" secondAttribute="bottom" constant="291" id="3Hi-2a-bo8"/>
                             <constraint firstItem="CTl-IH-wfe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="45b-57-9re"/>
                             <constraint firstItem="8zY-Wu-Yld" firstAttribute="trailing" secondItem="axZ-5H-yUY" secondAttribute="trailing" id="Atb-Yw-fea"/>
+                            <constraint firstItem="ueM-YH-VOG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="GVC-T2-Vy5"/>
                             <constraint firstItem="8zY-Wu-Yld" firstAttribute="baseline" secondItem="axZ-5H-yUY" secondAttribute="baseline" constant="-1" id="Ggf-HD-dKd"/>
+                            <constraint firstItem="ueM-YH-VOG" firstAttribute="top" secondItem="8zY-Wu-Yld" secondAttribute="bottom" constant="8" id="dCT-Lg-IGO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ueM-YH-VOG" secondAttribute="trailing" constant="10" id="feU-Om-LrG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="axZ-5H-yUY" secondAttribute="bottom" constant="298" id="fuj-qx-hQc"/>
                             <constraint firstItem="8zY-Wu-Yld" firstAttribute="top" secondItem="CTl-IH-wfe" secondAttribute="bottom" constant="8" symbolic="YES" id="hEn-p7-r4s"/>
                             <constraint firstItem="CTl-IH-wfe" firstAttribute="trailing" secondItem="axZ-5H-yUY" secondAttribute="trailing" id="jG5-Qi-mbE"/>
@@ -79,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="158" y="134"/>
+            <point key="canvasLocation" x="157.59999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

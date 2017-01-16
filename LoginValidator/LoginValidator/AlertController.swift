@@ -22,7 +22,7 @@ class AlertController {
     }
     
     func invalidAlert() {
-        let alert = UIAlertController(title: "Invalid Password", message: "Passwords must be between 6-10 characters and must include an uppercase character and number.", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Invalid Password", message: "Passwords must be between 6-11 characters and must include at least 1 uppercase letter and number.", preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         alert.show()
     }

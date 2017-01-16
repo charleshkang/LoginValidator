@@ -38,7 +38,7 @@ class CreateAccountViewController: UIViewController {
     
     /* http://stackoverflow.com/questions/37938435/swift-validate-username-input*/
     func isValidInput(input: String) -> Bool {
-        let regex = "\\A\\w{6,10}[1-9]\\z"
+        let regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d).{6,11}$"
         let test = NSPredicate(format:"Self Matches %@", regex)
         return test.evaluate(with: input)
     }
